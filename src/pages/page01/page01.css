@@ -16,7 +16,9 @@
   width: 100%;
 }
 
-aside {
+.title {
+  z-index: -500;
+  user-select: none;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-style: normal;
@@ -70,10 +72,18 @@ aside {
   margin-top: 10px;
   margin-left: 40%;
   cursor: pointer;
-  transition: .3s;
+  transition: 0.3s;
 }
 
-.yes-btn:hover{
-    transform: scale(110%);
-    background: rgba(126, 251, 42, 0.156);
+.yes-btn:hover {
+  transform: scale(110%);
+  background: rgba(126, 251, 42, 0.156);
+}
+
+.glow-circle {
+  cursor: pointer;
+  position: absolute;
+  border-radius: 50%;
+  background: #ffffff;
+  box-shadow: 0px 0px 53px 38px #ffffff;
 }

@@ -4,7 +4,7 @@ import Me from "../../assets/me.png";
 import { AnimatePresence, motion } from "framer-motion";
 import { wait } from "@testing-library/user-event/dist/utils";
 
-export default function Page01() {
+export default function Page01(props) {
   const [messages, setMessages] = useState([
     <motion.p
       initial={{ opacity: 0 }}
@@ -49,6 +49,9 @@ export default function Page01() {
   const [photoStyle, setPhotoStyle] = useState([]);
   const [expanded, setExpanded] = useState(false);
   const [gameStarted, setGameStarted] = useState(false);
+  const [x, setX] = useState("0px");
+  const [y, setY] = useState("300px");
+  const [scale, setScale] = useState(78);
 
   async function expand() {
     if (!expanded) {
@@ -64,29 +67,52 @@ export default function Page01() {
     }
   }
 
-  function startGame() {}
+  function startGame() {
+    setGameStarted(true);
+  }
+
+  function changePosition() {
+    // Gera uma posição aleatória em pixels
+    setX(Math.floor(Math.floor(Math.random() * 1301) - 650));
+    setY(Math.floor(Math.random() * 501));
+  }
 
   return (
-      <div className="main">
-      <motion.div
-        className="main-card"
-        onHoverStart={expand}
-        initial={{ scale: 0 }}
-        animate={{ scale: 1, height: cardHeight, width: cardWidth }}
-        transition={{ duration: 0.1 }}
-        style={cardStyle}
-      >
-        <motion.img
-          src={Me}
-          alt=""
-          srcset=""
-          className="photo"
-          style={photoStyle}
-        />
-        <h2>Jonathan Oliveira Bergamo</h2>
-        <AnimatePresence>{expanded ? messages : null}</AnimatePresence>
-      </motion.div>
-      <aside>1º SEMESTRE</aside>
+    <div className="main">
+      <AnimatePresence>
+        {!gameStarted ? (
+          <motion.div
+            className="main-card"
+            onHoverStart={expand}
+            initial={{ scale: 0 }}
+            animate={{ scale: 1, height: cardHeight, width: cardWidth }}
+            transition={{ duration: 0.1 }}
+            style={cardStyle}
+          >
+            <motion.img
+              src={Me}
+              alt=""
+              srcset=""
+              className="photo"
+              style={photoStyle}
+            />
+            <h2>Jonathan Oliveira Bergamo</h2>
+            <AnimatePresence>{expanded ? messages : null}</AnimatePresence>
+          </motion.div>
+        ) : (
+          <motion.div
+            className="glow-circle"
+            initial={{ x: 0, y: 200, height: 78, width: 78 }}
+            animate={{ x: x, y: y, height: scale, width: scale }}
+            onHoverStart={changePosition}
+            onClick={() => {
+              setScale(5000);
+              props.gameFinished();
+            }}
+          ></motion.div>
+        )}
+      </AnimatePresence>
+      <div className="title">1º SEMESTRE</div>
       <div className="background"></div>
     </div>
   );
