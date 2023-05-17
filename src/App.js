@@ -5,7 +5,7 @@ import { AnimatePresence } from "framer-motion";
 import Page02 from "./pages/page02";
 
 function App() {
-  const [gameFinished, setGameFinished] = useState(false);
+  const [gameFinished, setGameFinished] = useState(true);
   return (
     <div className="App">
       <AnimatePresence>
