@@ -15,14 +15,16 @@ aside {
   border: 1px solid rgba(255, 255, 255, 0.12);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 15px;
-  width: 300px;
+  width: 240px;
   padding-top: 15px;
   padding-bottom: 15px;
 }
 
 main {
-  width: 987px;
-  height: 3000px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 700px;
   left: 89px;
   top: 109px;
   background: rgba(19, 19, 19, 0.52);
@@ -38,6 +40,36 @@ main h1 {
   font-size: 48px;
   line-height: 58px;
   color: #ffffff;
+}
+
+main h2 {
+  font-size: 35px;
+  color: gray;
+  font-weight: 200;
+}
+li {
+  display: flex;
+  flex-direction: row;
+  margin-top: 15px;
+}
+
+li img{
+  padding: 20px;
+  height: 200px;
+}
+ol{
+  width: 90%;
+  text-align: justify;
+}
+
+input {
+  color: black;
+}
+select {
+  color: black;
+}
+span {
+  color: black;
 }
 
 main p {
@@ -59,9 +91,10 @@ main h3 {
   margin-top: 6px;
 }
 
-figcaption{
+figcaption {
   color: gray;
 }
+
 
 .background-page02 {
   z-index: -1000;
@@ -82,11 +115,12 @@ figcaption{
   gap: 10px;
   margin-left: 15px;
   cursor: pointer;
-  width: 240px;
+  width: 180px;
   padding-inline: 15px;
   border-radius: 15px;
   transition: 0.3s;
 }
+
 .section-title:hover {
   background-color: rgb(38, 38, 38);
 }
@@ -101,7 +135,7 @@ figcaption{
 .section-title h3 {
   font-weight: 400;
   color: #fff;
-  font-size: 16px;
+  font-size: 15px;
 }
 
 .calculator {
@@ -150,4 +184,25 @@ figcaption{
   width: 30px;
   height: 40px;
   font-size: 25px;
+}
+
+a {
+  color: transparent;
+}
+
+.github {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(#dadada, #d0d0d0);
+  border-radius: 5px;
+  height: 20px;
+  width: 90px;
+}
+
+.github h3 {
+  font-size: 12px;
+  font-weight: 400;
+  margin: 0;
+  color: black;
 }
