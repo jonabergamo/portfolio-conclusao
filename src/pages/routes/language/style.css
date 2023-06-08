@@ -1,0 +1,212 @@
+.content {
+  margin-top: 25px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+aside {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: 15px;
+  background: rgba(19, 19, 19, 0.52);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+  width: 240px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 700px;
+  left: 89px;
+  top: 109px;
+  background: rgba(19, 19, 19, 0.52);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+  padding-left: 40px;
+}
+
+main h1 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 58px;
+  color: #ffffff;
+}
+
+main h2 {
+  font-size: 35px;
+  color: gray;
+  font-weight: 200;
+}
+li {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+}
+
+li img {
+  padding: 20px;
+  height: 200px;
+}
+ol {
+  text-align: justify;
+}
+
+input {
+  color: black;
+}
+.text-area {
+  display: flex;
+  flex-direction: column;
+}
+select {
+  color: black;
+}
+
+span {
+  color: black;
+}
+
+main p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: justify;
+  width: 95%;
+  color: #ffffff;
+}
+main section {
+  margin-bottom: 50px;
+}
+
+main h3 {
+  color: gray;
+  font-weight: 300;
+  margin-top: 6px;
+}
+
+figcaption {
+  color: gray;
+}
+
+.background-page02 {
+  z-index: -1000;
+  position: absolute;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+  background-size: cover;
+  background-repeat: repeat;
+  position: fixed;
+}
+
+.section-title {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  margin-left: 15px;
+  cursor: pointer;
+  width: 180px;
+  padding-inline: 15px;
+  border-radius: 15px;
+  transition: 0.3s;
+}
+
+.section-title:hover {
+  background-color: rgb(38, 38, 38);
+}
+
+.green-circle {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #2e1fff;
+}
+
+.section-title h3 {
+  font-weight: 400;
+  color: #fff;
+  font-size: 15px;
+}
+
+.calculator {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 400px;
+  height: 45px;
+}
+
+.input-calculator {
+  width: 55px;
+  height: 36px;
+  font-size: 20px;
+  text-align: center;
+  background: #d9d9d9;
+  margin-right: 15px;
+  border-radius: 15px;
+}
+
+.select-calculator {
+  width: 55px;
+  height: 40px;
+  font-size: 20px;
+  text-align: center;
+  background: #d9d9d9;
+  margin-right: 15px;
+  border-radius: 15px;
+}
+
+.result-calculator {
+  width: 55px;
+  height: 40px;
+  font-size: 20px;
+  background: #d9d9d9;
+  margin-right: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-x: auto;
+  border-radius: 15px;
+}
+
+.equal {
+  color: white;
+  width: 30px;
+  height: 40px;
+  font-size: 25px;
+}
+
+a {
+  color: transparent;
+}
+
+.github {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(#dadada, #d0d0d0);
+  border-radius: 5px;
+  height: 20px;
+  width: 90px;
+}
+
+.github h3 {
+  font-size: 12px;
+  font-weight: 400;
+  margin: 0;
+  color: black;
+}

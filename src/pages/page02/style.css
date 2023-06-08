@@ -48,26 +48,31 @@ main h2 {
   font-weight: 200;
 }
 li {
+  width: 90%;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   margin-top: 15px;
 }
 
-li img{
+li img {
   padding: 20px;
   height: 200px;
 }
-ol{
-  width: 90%;
+ol {
   text-align: justify;
 }
 
 input {
   color: black;
 }
+.text-area {
+  display: flex;
+  flex-direction: column;
+}
 select {
   color: black;
 }
+
 span {
   color: black;
 }
@@ -95,14 +100,13 @@ figcaption {
   color: gray;
 }
 
-
 .background-page02 {
   z-index: -1000;
   position: absolute;
   top: 0;
   height: 100vh;
   width: 100vw;
-  background-image: url("../../assets/wp7569314.jpg");
+  background-color: black;
   background-size: cover;
   background-repeat: repeat;
   position: fixed;
@@ -129,7 +133,7 @@ figcaption {
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  background: #4bff5d;
+  background: #2e1fff;
 }
 
 .section-title h3 {

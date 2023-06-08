@@ -4,9 +4,9 @@ import Page01 from "./pages/page01/Page01";
 import { AnimatePresence } from "framer-motion";
 import Page02 from "./pages/page02";
 
-
 function App() {
   const [gameFinished, setGameFinished] = useState(true);
+
   return (
     <div className="App">
       <AnimatePresence>

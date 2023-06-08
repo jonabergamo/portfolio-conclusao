@@ -112,7 +112,6 @@ export default function Page01(props) {
           ></motion.div>
         )}
       </AnimatePresence>
-      <div className="title">1º SEMESTRE</div>
       <div className="background"></div>
     </div>
   );
