@@ -1,10 +1,55 @@
 header {
   top: 0;
+  width: 100vw;
   position: fixed;
   z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 header img {
   height: 15vw;
+}
+
+.navbar {
+  margin-right: 45px;
+  display: flex;
+  padding: 0.5vw;
+  margin-left: 25px;
+  margin-top: 25px;
+  backdrop-filter: blur(8px) saturate(0%);
+  -webkit-backdrop-filter: blur(8px) saturate(0%);
+  background-color: rgba(17, 25, 40, 0);
+  border-radius: 12px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+}
+
+.about-text{
+  color: white;
+  font-family: Helvetica, sans-serif;
+  font-size: 25px;
+  width: 60%;
+  margin-top: 50px;
+  margin-bottom: 200px;
+}
+
+.navbar ol a {
+  font-weight: 500;
+  color: antiquewhite;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 5px;
+}
+.left-side-text{
+  font-size: 25px;
+  width: 160px;
+}
+.navbar ol a:hover {
+  background-color: #ff003d;
 }
 
 .content {
@@ -36,9 +81,11 @@ footer {
 }
 
 .name {
-  font-size: 2vw;
+  font-size: calc(13px + 1vw);
   font-weight: 700;
   color: #ff003d;
+  font-family: Helvetica, sans-serif;
+  font-style: italic;
 }
 .circle {
   border: 80px transparent #ff003d;
@@ -56,7 +103,7 @@ footer {
   display: flex;
   gap: 50px;
   position: absolute;
-  width: 5000px;
+  width: 500vw;
   align-items: center;
   justify-content: center;
   z-index: -1000;
@@ -87,14 +134,14 @@ main h2 {
   color: gray;
   font-weight: 200;
 }
-li {
+section li {
   width: 90%;
   display: flex;
   flex-direction: column;
   margin-top: 15px;
 }
 
-li img {
+section li img {
   padding: 20px;
   height: 200px;
 }
@@ -232,7 +279,7 @@ figcaption {
   font-size: 25px;
 }
 
-a {
+section a {
   color: transparent;
 }
 
