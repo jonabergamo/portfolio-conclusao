@@ -8,7 +8,7 @@ function App() {
   const [gameFinished, setGameFinished] = useState(true);
 
   return (
-    <div className="App">
+    <>
       <AnimatePresence>
         {gameFinished ? (
           <Page02 />
@@ -22,7 +22,7 @@ function App() {
           />
         )}
       </AnimatePresence>
-    </div>
+    </>
   );
 }
 

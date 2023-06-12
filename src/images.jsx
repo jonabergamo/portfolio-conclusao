@@ -22,7 +22,10 @@ import lanwan from "./assets/lanwan.svg";
 import map from "./assets/map.svg";
 import rede from "./assets/rede.svg";
 import switchrede from "./assets/switch.svg";
-import figmaCurriculo from "./assets/figma curriculo.svg"
+import figmaCurriculo from "./assets/figma curriculo.svg";
+import img1 from "./assets/1.png";
+import main from "./assets/mainimg.png";
+import signature from "./assets/signature.svg";
 
 export {
   Me,
@@ -50,4 +53,7 @@ export {
   rede,
   switchrede,
   figmaCurriculo,
+  img1,
+  main,
+  signature
 };

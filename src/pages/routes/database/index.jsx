@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import "../../page02/style.css";
 
 export default function DataBase() {
   return (

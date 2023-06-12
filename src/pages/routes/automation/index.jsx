@@ -9,6 +9,7 @@ import {
   robo3,
   robo4,
 } from "../../../images";
+import "../../page02/style.css";
 
 export default function Page02() {
   function Automation() {}
@@ -17,7 +18,7 @@ export default function Page02() {
       id="automacao"
       initial={{ opacity: 0, x: 100 }}
       animate={{ opacity: 1, x: 0 }}
-      transition={{delay:0.3, duration:2, type:'spring'}}
+      transition={{ delay: 0.3, duration: 2, type: "spring" }}
     >
       <h1>Automação industrial</h1>
       <h2>Introdução a sistemas embarcados.</h2>

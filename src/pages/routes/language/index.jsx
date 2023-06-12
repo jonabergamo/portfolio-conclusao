@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import "./style.css";
 import WhileExample from "../../components/whileExample";
 import {
   htmlLogo,
@@ -15,6 +14,7 @@ import {
   cartao1,
   figmaCurriculo,
 } from "../../../images";
+import "../../page02/style.css";
 
 import ReactPlayer from "react-player/lazy";
 

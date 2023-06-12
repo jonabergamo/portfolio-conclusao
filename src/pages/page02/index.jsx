@@ -9,6 +9,9 @@ import Automation from "../routes/automation";
 import Network from "../routes/network";
 import DataCience from "../routes/datacience";
 import DataBase from "../routes/database";
+import { Slider } from "../components/Slider/slider";
+import { img1, main, signature } from "../../images";
+import { useGlitch } from "react-powerglitch";
 
 const router = createBrowserRouter([
   {
@@ -44,68 +47,103 @@ export default function Page02() {
     setScrollY(window.scrollY || window.pageYOffset);
   });
 
+  const glitch = useGlitch({
+    playMode: "always",
+    createContainers: true,
+    hideOverflow: false,
+    timing: {
+      duration: 8000,
+    },
+    glitchTimeSpan: {
+      start: 0.5,
+      end: 0.62,
+    },
+    shake: {
+      velocity: 15,
+      amplitudeX: 0.05,
+      amplitudeY: 0.05,
+    },
+    slice: {
+      count: 6,
+      velocity: 15,
+      minHeight: 0.02,
+      maxHeight: 0.15,
+      hueRotate: true,
+    },
+    pulse: false,
+  });
+
   return (
     <motion.div
       className="content"
-      initial={{  opacity: 0 }}
-      animate={{  opacity: 1 }}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
     >
       <main>
-        <RouterProvider router={router} />
-      </main>
-      <motion.aside
-        initial={{ y: 0 }}
-        animate={{ y: scrollY }}
-        transition={{
-          type: "spring",
-          duration: 0.3,
-          stiffness: 50,
-        }}
-      >
-        <div className="text-area">
-          <a href="/">
-            <div className="section-title">
-              <span className="green-circle 1"></span>
-              <h3>Introdução</h3>
-            </div>
-          </a>
-          <a href="language">
-            <div className="section-title">
-              <span className="green-circle 2"></span>
-              <h3>Linguagem de Programação</h3>
-            </div>
-          </a>
-          <a href="automation">
-            <div className="section-title">
-              <span className="green-circle 3"></span>
-              <h3>Automação industrial</h3>
-            </div>
-          </a>
-          <a href="network">
-            <div className="section-title">
-              <span className="green-circle 4"></span>
-              <h3>Redes de Computadores</h3>
-            </div>
-          </a>
-          <a href="database">
-            <div className="section-title">
-              <span className="green-circle 5"></span>
-              <h3>Banco de Dados</h3>
-            </div>
-          </a>
-          <a href="datacience">
-            <div className="section-title">
-              <span className="green-circle 6"></span>
-              <h3>Ciência de Dados</h3>
-            </div>
-          </a>
-          <div className="section-title">
-            <span className="green-circle 7"></span>
-            <h3>Projetos Pessoais</h3>
+        <header><div className="logo"><h1 className="name">Jonathan Bergamo</h1></div></header>
+        <div className="first-look">
+          <motion.img
+            src={main}
+            alt=""
+            style={{ width: "80vw" }}
+            ref={glitch.ref}
+          />
+          <div className="circle"></div>
+          <h2
+            className="left-side-text"
+            style={{
+              position: "absolute",
+              left: 45,
+              bottom: 100,
+              color: "antiquewhite",
+            }}
+          >
+            SENAI
+          </h2>
+          <div className="background-text">
+            <motion.h1
+              initial={{ x: 0 }}
+              animate={{ x: 1000 }}
+              transition={{
+                duration: 15,
+                repeat: Infinity,
+                repeatType: "reverse",
+                type: "tween",
+              }}
+            >
+              React Developer
+            </motion.h1>
+            <motion.h1
+              initial={{ x: 0 }}
+              animate={{ x: 1000 }}
+              transition={{
+                duration: 15,
+                repeat: Infinity,
+                repeatType: "reverse",
+                type: "tween",
+              }}
+            >
+              React Developer
+            </motion.h1>
+            <motion.h1
+              initial={{ x: 0 }}
+              animate={{ x: 1000 }}
+              transition={{
+                duration: 15,
+                repeat: Infinity,
+                repeatType: "reverse",
+                type: "tween",
+              }}
+            >
+              React Developer
+            </motion.h1>
           </div>
         </div>
-      </motion.aside>
-      <div className="background-page02"></div>
+        <div className="text-content">
+          <RouterProvider router={router} />
+        </div>
+        <footer><img src={signature} alt="" style={{ height: '15vw' }} ref={glitch.ref}/></footer>
+      </main>
     </motion.div>
   );
 }

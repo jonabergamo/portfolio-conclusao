@@ -1,4 +1,5 @@
 import { Me } from "../../../images";
+import "../../page02/style.css";
 
 export default function Intro() {
   return (

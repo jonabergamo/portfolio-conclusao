@@ -1,37 +1,77 @@
+header {
+  top: 0;
+  position: fixed;
+  z-index: 1000;
+}
+header img {
+  height: 15vw;
+}
+
 .content {
-  margin-top: 25px;
   display: flex;
   align-items: flex-start;
   justify-content: center;
 }
-
-aside {
+footer {
+  width: 100vw;
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
-  flex-direction: column;
-  margin-left: 15px;
-  background: rgba(19, 19, 19, 0.52);
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 15px;
-  width: 240px;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-bottom: 50px;
+}
+
+.logo {
+  padding: 15px;
+  margin-left: 25px;
+  margin-top: 25px;
+  backdrop-filter: blur(8px) saturate(0%);
+  -webkit-backdrop-filter: blur(8px) saturate(0%);
+  background-color: rgba(17, 25, 40, 0);
+  border-radius: 12px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+}
+
+.name {
+  font-size: 2vw;
+  font-weight: 700;
+  color: #ff003d;
+}
+.circle {
+  border: 80px transparent #ff003d;
+  border-radius: 50%;
+  height: 25vw;
+  width: 25vw;
+  position: absolute;
+  z-index: -100;
+  -webkit-box-shadow: 0px 0px 84px 4px #ff003d;
+  -moz-box-shadow: 0px 0px 84px 4px #ff003d;
+  box-shadow: 0px 0px 84px 4px #ff003d;
+}
+
+.background-text {
+  display: flex;
+  gap: 50px;
+  position: absolute;
+  width: 5000px;
+  align-items: center;
+  justify-content: center;
+  z-index: -1000;
+}
+
+.background-text h1 {
+  font-size: 10vw;
+  font-weight: 700;
+  color: rgb(104, 0, 0);
 }
 
 main {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  width: 700px;
-  left: 89px;
-  top: 109px;
-  background: rgba(19, 19, 19, 0.52);
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 15px;
-  padding-left: 40px;
 }
 
 main h1 {
@@ -88,6 +128,21 @@ main p {
 }
 main section {
   margin-bottom: 50px;
+  width: 65vw;
+}
+
+.first-look {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  background-color: black;
+  z-index: -100;
+}
+
+.text-content {
+  margin-left: 5vw;
 }
 
 main h3 {
@@ -100,24 +155,11 @@ figcaption {
   color: gray;
 }
 
-.background-page02 {
-  z-index: -1000;
-  position: absolute;
-  top: 0;
-  height: 100vh;
-  width: 100vw;
-  background-color: black;
-  background-size: cover;
-  background-repeat: repeat;
-  position: fixed;
-}
-
 .section-title {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   gap: 10px;
-  margin-left: 15px;
   cursor: pointer;
   width: 180px;
   padding-inline: 15px;
