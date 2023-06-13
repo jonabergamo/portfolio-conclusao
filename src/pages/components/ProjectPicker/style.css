@@ -1,7 +1,7 @@
 .project-picker-main {
   display: flex;
   flex-wrap: wrap;
-  width: 90vw;
+  width: 80vw;
   gap: 30px;
   margin-left: 90px;
 }

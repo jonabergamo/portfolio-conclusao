@@ -23,7 +23,7 @@ export const ProjectPicker = (props) => {
   const [screenInfo, setScreenInfo] = useState([]);
 
   const style = {
-    style: { cursor: "pointer", width: 300 },
+    style: { cursor: "pointer", width: "20vw" },
     animate: {},
     whileHover: { scale: 1.1 },
   };

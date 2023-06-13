@@ -109,7 +109,7 @@ export default function Page02() {
             </ol>
             <ol
               onClick={() => {
-                window.scrollTo(0, 0);
+                window.scrollTo(0, 1300);
               }}
               style={{ cursor: "pointer" }}
             >
@@ -166,6 +166,7 @@ export default function Page02() {
           />
           <div className="background-text">
             <motion.h1
+              className="text-background"
               initial={{ x: 0 }}
               animate={{ x: 1000 }}
               transition={{
@@ -175,9 +176,10 @@ export default function Page02() {
                 type: "tween",
               }}
             >
-              React Developer
+              Creative Developer
             </motion.h1>
             <motion.h1
+              className="text-background"
               initial={{ x: 0 }}
               animate={{ x: 1000 }}
               transition={{
@@ -187,19 +189,7 @@ export default function Page02() {
                 type: "tween",
               }}
             >
-              React Developer
-            </motion.h1>
-            <motion.h1
-              initial={{ x: 0 }}
-              animate={{ x: 1000 }}
-              transition={{
-                duration: 15,
-                repeat: Infinity,
-                repeatType: "reverse",
-                type: "tween",
-              }}
-            >
-              React Developer
+              Creative Developer
             </motion.h1>
           </div>
         </div>
@@ -218,7 +208,7 @@ export default function Page02() {
               style={{ display: "flex", justifyContent: "flex-end" }}
             >
               <div className="more-text-container">
-                <h2>EXPERIENCES</h2>
+                <h2>EXPERIÊNCIAS</h2>
                 <p>
                   Com 6 meses de experiência como freelancer na área de
                   desenvolvimento web, trabalhei em uma variedade de projetos
@@ -231,7 +221,7 @@ export default function Page02() {
                 </p>
               </div>
               <div className="more-text-container">
-                <h2>UNIVERSITY</h2>
+                <h2>FACULDADE</h2>
                 <p>
                   Atualmente, estou cursando Análise e Desenvolvimento de
                   Sistemas na Faculdade SENAI Gaspar Ricardo Junior. Essa

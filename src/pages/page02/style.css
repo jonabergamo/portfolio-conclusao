@@ -11,6 +11,10 @@
   --background-color: rgb(255, 255, 255);
 }
 
+.text-background {
+  font-family: Helvetica, sans-serif;
+}
+
 header {
   top: 0;
   width: 100vw;
@@ -128,14 +132,14 @@ footer {
   display: flex;
   gap: 50px;
   position: absolute;
-  width: 500vw;
   align-items: center;
+  width: 500vw;
   justify-content: center;
   z-index: -1000;
 }
 
 .background-text h1 {
-  font-size: 10vw;
+  font-size: 15vw;
   font-weight: 700;
   color: var(--text-color2);
 }
