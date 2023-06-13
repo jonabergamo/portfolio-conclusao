@@ -1,27 +1,19 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./App.css";
 import Page01 from "./pages/page01/Page01";
 import { AnimatePresence } from "framer-motion";
 import Page02 from "./pages/page02";
 
 function App() {
-  const [gameFinished, setGameFinished] = useState(true);
+  const [load, setLoad] = useState(true);
 
-  return (
-      <AnimatePresence>
-        {gameFinished ? (
-          <Page02 />
-        ) : (
-          <Page01
-            gameFinished={() => {
-              setTimeout(() => {
-                setGameFinished(true);
-              }, 1000);
-            }}
-          />
-        )}
-      </AnimatePresence>
-  );
+  useEffect(() => {
+    setTimeout(() => {
+      setLoad(false);
+    }, 2000);
+  }, []);
+
+  return <AnimatePresence>{load ? null : <Page02 />}</AnimatePresence>;
 }
 
 export default App;

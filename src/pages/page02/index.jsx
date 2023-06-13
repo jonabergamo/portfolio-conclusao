@@ -19,6 +19,10 @@ export default function Page02() {
   const [checked, setChecked] = useState(true);
   const [language, setLanguage] = useState(10);
 
+  useEffect(() => {
+    window.scrollTo(-100, 0);
+  }, []);
+
   const glitch = useGlitch({
     playMode: "always",
     createContainers: true,
@@ -93,7 +97,7 @@ export default function Page02() {
           <div className="navbar">
             <ol
               onClick={() => {
-                window.scrollTo(0, 0);
+                window.scrollTo(-100, 0);
               }}
               style={{ cursor: "pointer" }}
             >
@@ -101,7 +105,7 @@ export default function Page02() {
             </ol>
             <ol
               onClick={() => {
-                window.scrollTo(0, 650);
+                window.scrollTo(-100, 650);
               }}
               style={{ cursor: "pointer" }}
             >
@@ -109,7 +113,7 @@ export default function Page02() {
             </ol>
             <ol
               onClick={() => {
-                window.scrollTo(0, 1300);
+                window.scrollTo(-100, 1300);
               }}
               style={{ cursor: "pointer" }}
             >
@@ -117,7 +121,7 @@ export default function Page02() {
             </ol>
             <ol
               onClick={() => {
-                window.scrollTo(0, 0);
+                window.scrollTo(-100, 0);
               }}
               style={{ cursor: "pointer" }}
             >
