@@ -1,57 +1,23 @@
-import React, { useState } from "react";
-import {
-  createBrowserRouter,
-  RouterProvider,
-  BrowserRouter as Router,
-  Route,
-  Link,
-} from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import { Route, Routes } from "react-router-dom";
 import { motion } from "framer-motion";
 import "./style.css";
-
-import Intro from "../routes/Intro";
+import { CoolSwitch } from "../components/coolSwitch/index";
 import Language from "../routes/language";
 import Automation from "../routes/automation";
 import Network from "../routes/network";
 import DataCience from "../routes/datacience";
 import DataBase from "../routes/database";
-import { Slider } from "../components/Slider/slider";
-import { img1, main, signature } from "../../images";
+import { main, signature } from "../../images";
 import { useGlitch } from "react-powerglitch";
 
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <Intro />,
-  },
-  {
-    path: "language",
-    element: <Language />,
-  },
-  {
-    path: "automation",
-    element: <Automation />,
-  },
-  {
-    path: "network",
-    element: <Network />,
-  },
-  {
-    path: "database",
-    element: <DataBase />,
-  },
-  {
-    path: "datacience",
-    element: <DataCience />,
-  },
-]);
+import InputBase from "@mui/material/InputBase";
+import { styled } from "@mui/material/styles";
+import { ProjectPicker } from "../components/ProjectPicker";
 
 export default function Page02() {
-  const [scrollY, setScrollY] = useState(0);
-
-  window.addEventListener("scroll", function () {
-    setScrollY(window.scrollY || window.pageYOffset);
-  });
+  const [checked, setChecked] = useState(true);
+  const [language, setLanguage] = useState(10);
 
   const glitch = useGlitch({
     playMode: "always",
@@ -105,6 +71,14 @@ export default function Page02() {
     pulse: false,
   });
 
+  const handleChange = () => {
+    const html = document.querySelector("html");
+    const body = document.querySelector("body");
+    html.classList.toggle("dark-mode");
+    body.classList.toggle("dark-mode");
+    setChecked(!checked);
+  };
+
   return (
     <motion.div
       className="content"
@@ -117,25 +91,44 @@ export default function Page02() {
             <h1 className="name">Jonathan Bergamo</h1>
           </div>
           <div className="navbar">
-            <ol>
-              <a href="" ref={navGlith.ref}>
-                HOME
-              </a>
+            <ol
+              onClick={() => {
+                window.scrollTo(0, 0);
+              }}
+              style={{ cursor: "pointer" }}
+            >
+              <a ref={navGlith.ref}>INÍCIO</a>
             </ol>
-            <ol>
-              <a href="" ref={navGlith.ref}>
-                ABOUT
-              </a>
+            <ol
+              onClick={() => {
+                window.scrollTo(0, 650);
+              }}
+              style={{ cursor: "pointer" }}
+            >
+              <a ref={navGlith.ref}>SOBRE</a>
             </ol>
-            <ol>
-              <a href="" ref={navGlith.ref}>
-                STUDIES
-              </a>
+            <ol
+              onClick={() => {
+                window.scrollTo(0, 0);
+              }}
+              style={{ cursor: "pointer" }}
+            >
+              <a ref={navGlith.ref}>PROJETOS</a>
             </ol>
-            <ol>
-              <a href="" ref={navGlith.ref}>
-                PROJECTS
-              </a>
+            <ol
+              onClick={() => {
+                window.scrollTo(0, 0);
+              }}
+              style={{ cursor: "pointer" }}
+            >
+              <a ref={navGlith.ref}>ESTUDO</a>
+            </ol>
+            <ol style={{ cursor: "pointer" }}>
+              <CoolSwitch
+                handleChange={handleChange}
+                checked={checked}
+                ref={glitch.ref}
+              />
             </ol>
           </div>
         </header>
@@ -143,7 +136,7 @@ export default function Page02() {
           <motion.img
             src={main}
             alt=""
-            style={{ width: "80vw" }}
+            style={{ width: "75vw" }}
             ref={glitch.ref}
           />
           <div className="circle"></div>
@@ -152,12 +145,25 @@ export default function Page02() {
             style={{
               position: "absolute",
               left: 45,
-              bottom: 100,
-              color: "antiquewhite",
+              bottom: 25,
+              color: "var(--text-color2)",
             }}
           >
             LIVE IN SP, BRAZIL
           </h2>
+          <img
+            src={signature}
+            alt=""
+            className="signature"
+            style={{
+              position: "absolute",
+              right: 45,
+              bottom: 25,
+              height: 100,
+              color: "var(--text-color2)",
+            }}
+            ref={glitch.ref}
+          />
           <div className="background-text">
             <motion.h1
               initial={{ x: 0 }}
@@ -207,8 +213,44 @@ export default function Page02() {
               eficiente, garantindo a criação de sites e aplicativos que se
               destacam no mercado.
             </h3>
+            <div
+              className="more-text"
+              style={{ display: "flex", justifyContent: "flex-end" }}
+            >
+              <div className="more-text-container">
+                <h2>EXPERIENCES</h2>
+                <p>
+                  Com 6 meses de experiência como freelancer na área de
+                  desenvolvimento web, trabalhei em uma variedade de projetos
+                  desafiadores. Durante esse tempo, pude aprimorar minhas
+                  habilidades técnicas e criativas, adquirindo conhecimentos
+                  sólidos em tecnologias como ReactJS, React Native, HTML, CSS e
+                  JavaScript. Essa experiência me permitiu desenvolver uma
+                  abordagem centrada no usuário, priorizando a criação de
+                  interfaces intuitivas e cativantes.
+                </p>
+              </div>
+              <div className="more-text-container">
+                <h2>UNIVERSITY</h2>
+                <p>
+                  Atualmente, estou cursando Análise e Desenvolvimento de
+                  Sistemas na Faculdade SENAI Gaspar Ricardo Junior. Essa
+                  jornada acadêmica tem sido uma excelente oportunidade para
+                  expandir meus conhecimentos e me tornar um profissional mais
+                  ético e completo na área de desenvolvimento de sistemas.
+                </p>
+              </div>
+            </div>
           </div>
-          <RouterProvider router={router} />
+          <ProjectPicker check={checked} />
+          <Routes>
+            <Route exacth path="/" />
+            <Route path="/language" element={<Language />} />
+            <Route path="/automation" element={<Automation />} />
+            <Route path="/network" element={<Network />} />
+            <Route path="/database" element={<DataBase />} />
+            <Route path="/dataciencie" element={<DataCience />} />
+          </Routes>
         </div>
         <footer>
           <img

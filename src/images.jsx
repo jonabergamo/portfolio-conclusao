@@ -26,6 +26,19 @@ import figmaCurriculo from "./assets/figma curriculo.svg";
 import img1 from "./assets/1.png";
 import main from "./assets/mainimg.png";
 import signature from "./assets/signature.svg";
+import projectSamu from "./assets/project-samu.svg";
+import smartCode from "./assets/projects/smart-code.svg";
+import paginaCaptura from "./assets/projects/paginaCaptura.svg";
+import portfolio from "./assets/projects/portfolio.svg";
+import gerenciador from "./assets/projects/gerenciador.svg";
+import jogoEspaco from "./assets/projects/jogoEspaco.svg";
+import smartCodeWhite from "./assets/projects/smart-code-white.svg";
+import paginaCapturaWhite from "./assets/projects/paginaCaptura-white.svg";
+import portfolioWhite from "./assets/projects/portfolio-white.svg";
+import gerenciadorWhite from "./assets/projects/gerenciador-white.svg";
+import jogoEspacoWhite from "./assets/projects/jogoEspaco-white.svg";
+import calculadora from "./assets/projects/calculadora.svg";
+import calculadoraWhite from "./assets/projects/calculadora-white.svg";
 
 export {
   Me,
@@ -55,5 +68,18 @@ export {
   figmaCurriculo,
   img1,
   main,
-  signature
+  signature,
+  projectSamu,
+  smartCode,
+  paginaCaptura,
+  portfolio,
+  gerenciador,
+  jogoEspaco,
+  smartCodeWhite,
+  paginaCapturaWhite,
+  portfolioWhite,
+  gerenciadorWhite,
+  jogoEspacoWhite,
+  calculadora,
+calculadoraWhite,
 };

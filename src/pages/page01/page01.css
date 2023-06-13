@@ -1,12 +1,4 @@
-.background {
-  z-index: -1000;
-  position: absolute;
-  top: 0;
-  height: 100%;
-  width: 100%;
-  background-color: black;
-  background-size: cover;
-}
+
 
 .main {
   display: flex;

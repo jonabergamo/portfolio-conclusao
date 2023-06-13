@@ -5,7 +5,7 @@ html {
 }
 
 * {
-  color: white;
+  color: var(--text-color);
   font-family: "Space Mono", monospace;
 }
 
@@ -18,7 +18,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
-  background-color: rgb(5, 5, 5);
+  background-color: var(--background-color);
 }
 
 code {
@@ -48,5 +48,5 @@ code {
 
 /* Personalizando o thumb quando o scroll estiver ativo */
 ::-webkit-scrollbar-thumb:active {
-  background-color: #06e860;
+  background-color: #e80606;
 }

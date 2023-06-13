@@ -1,3 +1,16 @@
+:root {
+  --text-color: white;
+  --text-color2: #fefaee;
+  --background-color: black;
+  --secondary-color: #ff003d;
+}
+
+.dark-mode:root {
+  --text-color: rgb(0, 0, 0);
+  --text-color2: #000000;
+  --background-color: rgb(255, 255, 255);
+}
+
 header {
   top: 0;
   width: 100vw;
@@ -17,10 +30,9 @@ header img {
   padding: 0.5vw;
   margin-left: 25px;
   margin-top: 25px;
-  backdrop-filter: blur(8px) saturate(0%);
-  -webkit-backdrop-filter: blur(8px) saturate(0%);
-  background-color: rgba(17, 25, 40, 0);
-  border-radius: 12px;
+  backdrop-filter: blur(6px) saturate(100%);
+  -webkit-backdrop-filter: blur(6px) saturate(100%);
+  border-radius: 10px;
   height: 25px;
   display: flex;
   justify-content: center;
@@ -28,28 +40,42 @@ header img {
   user-select: none;
 }
 
-.about-text{
-  color: white;
-  font-family: Helvetica, sans-serif;
-  font-size: 25px;
-  width: 60%;
-  margin-top: 50px;
-  margin-bottom: 200px;
+.more-text-container {
+  width: 40%;
+}
+
+.more-text {
+  margin-right: 50px;
+}
+
+.about-text {
+  color: var(--text-color);
+  font-size: 20px;
+  width: 70%;
+  margin-top: 120px;
+}
+.about {
+  margin-bottom: 180px;
+}
+.more-text-container h2 {
+  margin: 0;
 }
 
 .navbar ol a {
   font-weight: 500;
-  color: antiquewhite;
+  color: var(--text-color2);
   text-decoration: none;
   font-size: 20px;
   padding: 5px;
 }
-.left-side-text{
-  font-size: 25px;
+.left-side-text {
+  position: absolute;
+  bottom: 5px;
+  font-size: 20px;
   width: 160px;
 }
 .navbar ol a:hover {
-  background-color: #ff003d;
+  background-color: var(--secondary-color);
 }
 
 .content {
@@ -71,7 +97,6 @@ footer {
   margin-top: 25px;
   backdrop-filter: blur(8px) saturate(0%);
   -webkit-backdrop-filter: blur(8px) saturate(0%);
-  background-color: rgba(17, 25, 40, 0);
   border-radius: 12px;
   height: 25px;
   display: flex;
@@ -83,20 +108,20 @@ footer {
 .name {
   font-size: calc(13px + 1vw);
   font-weight: 700;
-  color: #ff003d;
+  color: var(--secondary-color);
   font-family: Helvetica, sans-serif;
   font-style: italic;
 }
 .circle {
-  border: 80px transparent #ff003d;
+  border: 80px transparent var(--secondary-color);
   border-radius: 50%;
   height: 25vw;
   width: 25vw;
   position: absolute;
   z-index: -100;
-  -webkit-box-shadow: 0px 0px 84px 4px #ff003d;
-  -moz-box-shadow: 0px 0px 84px 4px #ff003d;
-  box-shadow: 0px 0px 84px 4px #ff003d;
+  -webkit-box-shadow: 0px 0px 84px 4px var(--secondary-color);
+  -moz-box-shadow: 0px 0px 84px 4px var(--secondary-color);
+  box-shadow: 0px 0px 84px 4px var(--secondary-color);
 }
 
 .background-text {
@@ -112,7 +137,7 @@ footer {
 .background-text h1 {
   font-size: 10vw;
   font-weight: 700;
-  color: rgb(104, 0, 0);
+  color: var(--text-color2);
 }
 
 main {
@@ -126,7 +151,7 @@ main h1 {
   font-weight: 400;
   font-size: 48px;
   line-height: 58px;
-  color: #ffffff;
+  color: var(--text-color);
 }
 
 main h2 {
@@ -171,7 +196,7 @@ main p {
   line-height: 19px;
   text-align: justify;
   width: 95%;
-  color: #ffffff;
+  color: var(--text-color);
 }
 main section {
   margin-bottom: 50px;
@@ -184,7 +209,8 @@ main section {
   align-items: center;
   justify-content: center;
   width: 100vw;
-  background-color: black;
+  height: 110vh;
+  background-color: var(--background-color);
   z-index: -100;
 }
 
@@ -215,19 +241,12 @@ figcaption {
 }
 
 .section-title:hover {
-  background-color: rgb(38, 38, 38);
-}
-
-.green-circle {
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background: #2e1fff;
+  background-color: var(--background-color);
 }
 
 .section-title h3 {
   font-weight: 400;
-  color: #fff;
+  color: var(--text-color);
   font-size: 15px;
 }
 
@@ -244,7 +263,7 @@ figcaption {
   height: 36px;
   font-size: 20px;
   text-align: center;
-  background: #d9d9d9;
+  background: white;
   margin-right: 15px;
   border-radius: 15px;
 }
@@ -254,7 +273,7 @@ figcaption {
   height: 40px;
   font-size: 20px;
   text-align: center;
-  background: #d9d9d9;
+  background: white;
   margin-right: 15px;
   border-radius: 15px;
 }
@@ -263,7 +282,7 @@ figcaption {
   width: 55px;
   height: 40px;
   font-size: 20px;
-  background: #d9d9d9;
+  background: white;
   margin-right: 15px;
   display: flex;
   justify-content: center;
@@ -273,7 +292,7 @@ figcaption {
 }
 
 .equal {
-  color: white;
+  color: var(--text-color);
   width: 30px;
   height: 40px;
   font-size: 25px;
@@ -287,7 +306,7 @@ section a {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: linear-gradient(#dadada, #d0d0d0);
+  background-image: linear-gradient(var(--text-color), var(--text-color));
   border-radius: 5px;
   height: 20px;
   width: 90px;
@@ -297,5 +316,5 @@ section a {
   font-size: 12px;
   font-weight: 400;
   margin: 0;
-  color: black;
+  color: var(--background-color);
 }

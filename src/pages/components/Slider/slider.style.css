@@ -1,14 +1,22 @@
 .slider-container{
     display: flex;
     flex-wrap: nowrap;
-    width: 95vw;
-    gap: 35px;
+    justify-content: flex-start;
+    width: 50vw;
+    gap: 1vw;
     cursor: grab;
+}
+
+.slider-container h1{
+    font-size: 25px;
+}
+.slider-container p{
+    font-size: 10px;
 }
 
 .slider-container img{
     cursor: pointer;
-    z-index: 1000;
+    z-index: 500;
 }
 
 .slider-container::-webkit-scrollbar{
@@ -17,7 +25,7 @@
 
 
 .image{
-    height: 350px;
+    height: 20vw;
 }
 
 .slider-main{

@@ -1,0 +1,13 @@
+.project-picker-main {
+  display: flex;
+  flex-wrap: wrap;
+  width: 90vw;
+  gap: 30px;
+  margin-left: 90px;
+}
+
+.project-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

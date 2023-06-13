@@ -8,7 +8,6 @@ function App() {
   const [gameFinished, setGameFinished] = useState(true);
 
   return (
-    <>
       <AnimatePresence>
         {gameFinished ? (
           <Page02 />
@@ -22,7 +21,6 @@ function App() {
           />
         )}
       </AnimatePresence>
-    </>
   );
 }
 
