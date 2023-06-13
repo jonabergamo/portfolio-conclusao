@@ -1,26 +1,42 @@
-.screen-project {
+.screen-studie {
   display: flex;
   z-index: 2000;
   position: fixed;
   top: 20px;
-  left: 20px;
+  left: 50px;
   gap: 50px;
-  padding: 50px;
+  padding: 30px;
   width: 90vw;
-  height: 70vh;
+  height: 85vh;
   background-color: var(--background-color);
   border-radius: 2px;
   border: 1px solid var(--secondary-color);
+  overflow-y: scroll;
 }
 
-.screen-project h1 {
+.screen-studie::-webkit-scrollbar {
+  width: 5px;
+  padding-right: 50px;
+}
+
+.screen-studie::-webkit-scrollbar-track {
+  height: 80vh;
+}
+
+.studie-routes {
+  margin-left: 4vw;
+}
+
+.screen-studie h1 {
   font-size: 35px;
 }
-.screen-project p {
+.screen-studie p {
   font-size: 15px;
 }
 
-.projects-close {
+.studies-close {
+  position: fixed;
+  left: 5vw;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -33,7 +49,7 @@
   height: 45px;
 }
 
-.projects-close:hover {
+.studies-close:hover {
   background-color: var(--secondary-color);
 }
 

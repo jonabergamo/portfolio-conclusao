@@ -39,6 +39,23 @@ import gerenciadorWhite from "./assets/projects/gerenciador-white.svg";
 import jogoEspacoWhite from "./assets/projects/jogoEspaco-white.svg";
 import calculadora from "./assets/projects/calculadora.svg";
 import calculadoraWhite from "./assets/projects/calculadora-white.svg";
+import language from "./assets/studies/language.svg";
+import automation from "./assets/studies/automation.svg";
+import network from "./assets/studies/network.svg";
+import database from "./assets/studies/database.svg";
+import datacience from "./assets/studies/datacience.svg";
+import languageWhite from "./assets/studies/language-white.svg";
+import automationWhite from "./assets/studies/automation-white.svg";
+import networkWhite from "./assets/studies/network-white.svg";
+import databaseWhite from "./assets/studies/database-white.svg";
+import datacienceWhite from "./assets/studies/datacience-white.svg";
+import datascience1 from "./assets/studies/datascience/image 1.svg";
+import datascience2 from "./assets/studies/datascience/image 2.svg";
+import datascience3 from "./assets/studies/datascience/image 3.svg";
+import datascience4 from "./assets/studies/datascience/image 4.svg";
+import datascience5 from "./assets/studies/datascience/image 5.svg";
+import datascience6 from "./assets/studies/datascience/image 6.svg";
+import datascience7 from "./assets/studies/datascience/image 7.svg";
 
 export {
   Me,
@@ -81,5 +98,22 @@ export {
   gerenciadorWhite,
   jogoEspacoWhite,
   calculadora,
-calculadoraWhite,
+  calculadoraWhite,
+  language,
+  automation,
+  network,
+  database,
+  datacience,
+  languageWhite,
+  automationWhite,
+  networkWhite,
+  databaseWhite,
+  datacienceWhite,
+  datascience1,
+  datascience2,
+  datascience3,
+  datascience4,
+  datascience5,
+  datascience6,
+  datascience7,
 };

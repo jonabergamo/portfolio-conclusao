@@ -2,9 +2,36 @@ import ReactPlayer from "react-player";
 import { motion } from "framer-motion";
 import { BsArrowBarLeft } from "react-icons/bs";
 import "./styles.css";
+import { useGlitch } from "react-powerglitch";
 
 export const ProjectScreen = (props) => {
   const screenInfo = props.data;
+
+  const navGlith = useGlitch({
+    playMode: "hover",
+    createContainers: true,
+    hideOverflow: false,
+    timing: {
+      duration: 2000,
+    },
+    glitchTimeSpan: {
+      start: 0,
+      end: 1,
+    },
+    shake: {
+      velocity: 10,
+      amplitudeX: 0.2,
+      amplitudeY: 0.2,
+    },
+    slice: {
+      count: 6,
+      velocity: 15,
+      minHeight: 0.02,
+      maxHeight: 0.15,
+      hueRotate: true,
+    },
+    pulse: false,
+  });
 
   return (
     <motion.div
@@ -14,10 +41,18 @@ export const ProjectScreen = (props) => {
       animate={{ opacity: 1, y: 0, x: 0 }}
       transition={{ type: "spring", duration: 0.5 }}
     >
-      <button className="close" onClick={props.close}>
+      <motion.button
+        className="projects-close"
+        onClick={props.close}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        ref={navGlith.ref}
+      >
         <BsArrowBarLeft size={30} style={{ color: "red" }} />
-      </button>
-      <ReactPlayer url={screenInfo.video_url} loop playing light controls />
+      </motion.button>
+      <div className="player">
+        <ReactPlayer url={screenInfo.video_url} loop playing light controls />
+      </div>
       <div
         className="infos"
         style={{ display: "flex", flexDirection: "column" }}

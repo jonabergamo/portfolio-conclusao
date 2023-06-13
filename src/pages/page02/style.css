@@ -44,6 +44,14 @@ header img {
   user-select: none;
 }
 
+.progress-bar {
+  width: 1vw;
+  height: 5px;
+  position: fixed;
+  bottom: 0;
+  background-color: red;
+}
+
 .more-text-container {
   width: 40%;
 }
@@ -82,17 +90,78 @@ header img {
   background-color: var(--secondary-color);
 }
 
+.top-arrow {
+  position: fixed;
+  right: 5px;
+  bottom: 50px;
+  cursor: pointer;
+}
+.top-arrow:hover {
+  background-color: #ff003d;
+}
+
 .content {
   display: flex;
   align-items: flex-start;
   justify-content: center;
 }
 footer {
+  display: flex;
+  flex-direction: column;
   width: 100vw;
   display: flex;
   align-items: center;
   justify-content: center;
   padding-bottom: 50px;
+}
+
+.email {
+  font-family: Helvetica, sans-serif;
+  font-weight: 700;
+  font-style: italic;
+  font-size: 40px;
+  color: var(--text-color);
+  cursor: pointer;
+}
+
+.social-icons {
+  display: flex;
+  gap: 25px;
+}
+.social-icons1 {
+  display: flex;
+  gap: 5px;
+}
+
+.icon1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 65px;
+  height: 65px;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.light:hover {
+  background-color: var(--secondary-color);
+}
+
+.icon:hover {
+  background-color: var(--secondary-color);
+}
+.email:hover {
+  background-color: var(--secondary-color);
 }
 
 .logo {
