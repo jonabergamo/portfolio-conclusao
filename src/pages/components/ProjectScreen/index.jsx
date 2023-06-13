@@ -51,7 +51,13 @@ export const ProjectScreen = (props) => {
         <BsArrowBarLeft size={30} style={{ color: "red" }} />
       </motion.button>
       <div className="player">
-        <ReactPlayer url={screenInfo.video_url} loop playing light controls />
+        <ReactPlayer
+          url={screenInfo.video_url}
+          loop
+          playing
+          light={screenInfo.img}
+          controls={false}
+        />
       </div>
       <div
         className="infos"
