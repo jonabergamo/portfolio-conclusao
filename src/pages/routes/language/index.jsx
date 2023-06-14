@@ -249,7 +249,7 @@ export default function Language() {
       </p>
       <img src={cartao1} alt="" style={{ height: 400 }} />
       <img src={cartao2} alt="" style={{ height: 400 }} />
-      <ReactPlayer url="../../assets/2023-04-11 15-41-04.mp4" />
+      <ReactPlayer url="https://www.youtube.com/watch?v=-3XL7kxLb2M" />
       <p>
         Durante minha aprendizagem do React, encontrei alguns desafios comuns,
         como:
