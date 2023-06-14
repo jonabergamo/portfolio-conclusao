@@ -12,10 +12,13 @@ Este é um projeto de portfólio web personalizado que contém todos os projetos
 
 ## Tecnologias utilizadas
 
-- **React** - Biblioteca JavaScript para a criação de interfaces de usuário.
-- **Framer Motion** - Biblioteca para criação de animações em React.
-- **React Icons** - Conjunto de ícones para React.
-- **React Player** - Componente React para reprodução de vídeos.
+- **`React`** - O React é uma biblioteca JavaScript amplamente utilizada para a criação de interfaces de usuário interativas. Ele permite construir componentes reutilizáveis e com estado, que atualizam de forma eficiente a interface em resposta às mudanças nos dados. O React também facilita a criação de aplicações de página única (SPA) e a construção de interfaces dinâmicas e responsivas.
+
+- **`React Router DOM`** - O React Router Dom é uma biblioteca que permite o roteamento de páginas em aplicações React. Ela facilita a criação de aplicativos de várias páginas, onde cada página é renderizada de forma independente e pode ter sua própria URL. Com o React Router Dom, é possível criar rotas, links e lidar com a navegação entre diferentes páginas do seu portfólio.
+- **`Framer Motion`** - O Framer Motion é uma biblioteca para criação de animações em React. Ele simplifica a criação de animações complexas e interativas, permitindo que você adicione efeitos de transição, animações de movimento e outros comportamentos dinâmicos aos elementos do seu portfólio.
+- **`React Icons`** - O React Icons é uma biblioteca que fornece um conjunto abrangente de ícones para uso em aplicativos React. Ele oferece uma ampla seleção de ícones populares, como ícones do Material Design, ícones do Font Awesome e muito mais. Com o React Icons, você pode facilmente adicionar ícones relevantes ao seu portfólio, melhorando a usabilidade e a aparência do seu projeto.
+- **`React Player`** - O React Player é um componente React utilizado para reprodução de vídeos. Ele suporta uma variedade de formatos de vídeo e fornece controles de reprodução personalizáveis. Com o React Player, você pode incorporar vídeos em seu portfólio e oferecer uma experiência de visualização integrada aos seus usuários.
+- **`react-powerglitch`** - O react-powerglitch é uma biblioteca que permite aplicar o efeito de glitch em elementos visuais em aplicações React. O glitch é um efeito visual que simula falhas ou distorções temporárias na imagem, criando uma estética distinta e retro. Essa biblioteca facilita a adição desse efeito em componentes React, permitindo que você crie transições e animações com aparência de glitch de forma simples e personalizada.
 - E outras bibliotecas listadas no arquivo package.json.
 
 ## Instalação
