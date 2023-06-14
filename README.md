@@ -44,3 +44,5 @@ Se você tiver alguma dúvida ou sugestão sobre o projeto, sinta-se à vontade 
 - Instagram: [jowbergamo](https://www.instagram.com/jowbergamo/)
 
 Sinta-se à vontade para me contatar por qualquer um desses canais. Ficarei feliz em ajudar ou receber feedback sobre o projeto.
+
+<img src="./src/assets/signature.svg">
