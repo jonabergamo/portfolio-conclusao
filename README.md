@@ -2,6 +2,8 @@
 
 Este é um projeto de portfólio web personalizado que contém todos os projetos realizados e informações sobre cada matéria aprendida no primeiro semestre da faculdade de análise e desenvolvimento de sistemas.
 
+## Acesse o site [Aqui](https://jonathanbergamo.netlify.app)
+
 <hr/>
 
 <img src="./src/assets/readme/1.png" alt="Texto alternativo" />
@@ -37,7 +39,7 @@ Este é um projeto de portfólio web personalizado que contém todos os projetos
 
 Se você tiver alguma dúvida ou sugestão sobre o projeto, sinta-se à vontade para entrar em contato comigo:
 
-- E-mail: jonathanbergamo16@gmail.com
+- E-mail: [jonathanbergamo16@gmail.com](https://mailto:jonathanbergamo16@gmail.com)
 - LinkedIn: [Jonathan Bergamo](https://www.linkedin.com/in/jonathanbergamo/)
 - Instagram: [jowbergamo](https://www.instagram.com/jowbergamo/)
 
