@@ -65,7 +65,7 @@ export const ProjectScreen = (props) => {
       >
         <h1>{screenInfo.title}</h1>
         <p>{screenInfo.sub}</p>
-        {props.link !== false ? (
+        {screenInfo.link !== false ? (
           <a href={screenInfo.link} target="_blank">
             <div className="button">Testar Projeto</div>
           </a>

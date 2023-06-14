@@ -1,70 +1,60 @@
-# Getting Started with Create React App
+# Portfólio Personalizado de Conclusão de Semestre
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este é um projeto de portfólio web personalizado que contém todos os projetos realizados e informações sobre cada matéria aprendida no primeiro semestre da faculdade de análise e desenvolvimento de sistemas.
 
-## Available Scripts
+## Tecnologias utilizadas
 
-In the project directory, you can run:
+- **React** - Biblioteca JavaScript para a criação de interfaces de usuário.
+- **React Router Dom** - Biblioteca para roteamento de páginas no React.
+- **React Bootstrap** - Framework front-end baseado em Bootstrap para desenvolvimento de interfaces responsivas.
+- **Ant Design (Antd)** - Biblioteca de componentes UI para React.
+- **Emotion** - Biblioteca de estilização CSS em JavaScript para React.
+- **Framer Motion** - Biblioteca para criação de animações em React.
+- **React Icons** - Conjunto de ícones para React.
+- **React Player** - Componente React para reprodução de vídeos.
+- **React Syntax Highlighter** - Componente React para realce de sintaxe em blocos de código.
+- E outras bibliotecas listadas no arquivo package.json.
 
-### `npm start`
+## Instalação
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. Certifique-se de ter o Node.js e o npm instalados em sua máquina.
+2. Clone este repositório: `git clone <URL do repositório>`
+3. Acesse o diretório do projeto: `cd <nome do diretório>`
+4. Instale as dependências: `npm install`
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Uso
 
-### `npm test`
+1. Execute o projeto: `npm start`
+2. Abra o navegador e acesse: `http://localhost:3000`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Estrutura do Projeto
 
-### `npm run build`
+Descreva brevemente a estrutura de diretórios do seu projeto, destacando os principais arquivos e pastas.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Exemplos
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+![Página inicial do portfólio]("https://media.licdn.com/dms/image/D4D03AQEYy6rA6FJmZA/profile-displayphoto-shrink_200_200/0/1685715165883?e=1692230400&v=beta&t=Em2urfdo-nCJm_sogVSDndJ5CfTCV4oSq4ttLlr1pFI")
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Contribuição
 
-### `npm run eject`
+Se você deseja contribuir para este projeto, siga as etapas abaixo:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1. Faça um fork deste repositório.
+2. Crie uma nova branch: `git checkout -b minha-branch`
+3. Faça as alterações desejadas e faça commit: `git commit -m "Minha contribuição"`
+4. Envie para o branch principal: `git push origin minha-branch`
+5. Crie um novo Pull Request.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Licença
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Este projeto está licenciado sob a [inserir nome da licença] - [inserir link para o arquivo de licença].
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Contato
 
-## Learn More
+Se você tiver alguma dúvida ou sugestão sobre o projeto, sinta-se à vontade para entrar em contato comigo:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- E-mail: jonathanbergamo16@gmail.com
+- LinkedIn: [Jonathan Bergamo](https://www.linkedin.com/in/jonathanbergamo/)
+- Instagram: [jowbergamo](https://www.instagram.com/jowbergamo/)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Sinta-se à vontade para me contatar por qualquer um desses canais. Ficarei feliz em ajudar ou receber feedback sobre o projeto.
