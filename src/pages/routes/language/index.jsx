@@ -14,7 +14,7 @@ import {
   cartao1,
   figmaCurriculo,
 } from "../../../images";
-import "../../page02/style.css";
+import "../../Page01/style.css";
 
 import ReactPlayer from "react-player/lazy";
 

@@ -9,7 +9,7 @@ import {
   robo3,
   robo4,
 } from "../../../images";
-import "../../page02/style.css";
+import "../../Page01/style.css";
 
 export default function Page02() {
   function Automation() {}

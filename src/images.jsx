@@ -56,6 +56,9 @@ import datascience4 from "./assets/studies/datascience/image 4.svg";
 import datascience5 from "./assets/studies/datascience/image 5.svg";
 import datascience6 from "./assets/studies/datascience/image 6.svg";
 import datascience7 from "./assets/studies/datascience/image 7.svg";
+import titanic1 from "./assets/studies/database/titanic1.png";
+import titanic2 from "./assets/studies/database/titanic2.png";
+import uml from "./assets/studies/database/uml.png";
 
 export {
   Me,
@@ -116,4 +119,7 @@ export {
   datascience5,
   datascience6,
   datascience7,
+  titanic1,
+  titanic2,
+  uml,
 };

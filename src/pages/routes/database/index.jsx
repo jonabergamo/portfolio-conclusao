@@ -1,5 +1,7 @@
 import { motion } from "framer-motion";
-import "../../page02/style.css";
+import "../../Page01/style.css";
+import ReactPlayer from "react-player";
+import { titanic1, titanic2, uml } from "../../../images";
 
 export default function DataBase() {
   return (
@@ -18,6 +20,7 @@ export default function DataBase() {
         estão no coração de quase todos os sistemas de TI, permitindo a
         organização, armazenamento e recuperação eficientes de informações.
       </p>
+      <img src={titanic1} alt="" style={{ height: 400 }} />
       <p>
         Nosso aprendizado se concentrou principalmente nos modelos de dados, que
         são estruturas fundamentais para a organização de informações em um
@@ -27,6 +30,7 @@ export default function DataBase() {
         entidade-relacionamento, uma ferramenta de modelagem de dados que
         fornece uma visão gráfica dos elementos de dados e suas conexões.
       </p>
+      <img src={titanic2} alt="" style={{ height: 400 }} />
       <p>
         Prosseguimos com uma discussão abrangente sobre a arquitetura e os
         componentes dos bancos de dados. Isso incluiu entender o papel do
@@ -41,6 +45,7 @@ export default function DataBase() {
         primárias e estrangeiras, normalização e como a indexação pode melhorar
         o desempenho das consultas.
       </p>
+      <img src={uml} alt="" style={{ height: 400 }} />
       <h2>Aplicação Prática e Projetos de Bancos de Dados</h2>
       <p>
         A prática foi uma parte importante de nosso aprendizado, e tivemos a
@@ -52,6 +57,7 @@ export default function DataBase() {
         claras e precisas de nossos bancos de dados fictícios, incluindo
         livrarias, escolas, faculdades e agências de viagens..
       </p>
+      <ReactPlayer url="https://youtu.be/UhRRUnaqMCw" loop playing />
       <p>
         Os Diagramas de Entidade-Relacionamento (ER), uma forma específica de
         UML, foram especialmente úteis para ilustrar a estrutura de nosso banco

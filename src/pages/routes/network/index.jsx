@@ -1,6 +1,6 @@
 import { map, lanwan, switchrede, historia, rede } from "../../../images";
 import { motion } from "framer-motion";
-import "../../page02/style.css";
+import "../../Page01/style.css";
 
 export default function Network() {
   return (
