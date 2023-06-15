@@ -24,7 +24,7 @@ const squareVariants = {
   hidden: { opacity: 0, x: -100 },
 };
 
-export default function Page02() {
+export default function Page01() {
   const [checked, setChecked] = useState(true);
   const [language, setLanguage] = useState(10);
   const [scrollY, setScrollY] = useState(0);

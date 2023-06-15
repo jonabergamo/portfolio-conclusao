@@ -7,7 +7,7 @@ import {
   datascience6,
   datascience7,
 } from "../../../images";
-import "../../page02/style.css";
+import "../../Page01/style.css";
 
 export default function DataCience() {
   return (

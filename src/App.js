@@ -1,8 +1,7 @@
 import { useEffect, useState } from "react";
 import "./App.css";
-import Page01 from "./pages/page01/Page01";
 import { AnimatePresence } from "framer-motion";
-import Page02 from "./pages/page02";
+import Page01 from "./pages/Page01";
 
 function App() {
   const [load, setLoad] = useState(true);
@@ -13,7 +12,7 @@ function App() {
     }, 2000);
   }, []);
 
-  return <AnimatePresence>{load ? null : <Page02 />}</AnimatePresence>;
+  return <AnimatePresence>{load ? null : <Page01 />}</AnimatePresence>;
 }
 
 export default App;
