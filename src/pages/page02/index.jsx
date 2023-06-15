@@ -81,7 +81,7 @@ export default function Page02() {
     createContainers: true,
     hideOverflow: false,
     timing: {
-      duration: 2000,
+      duration: 10000,
     },
     glitchTimeSpan: {
       start: 0,
@@ -89,8 +89,8 @@ export default function Page02() {
     },
     shake: {
       velocity: 10,
-      amplitudeX: 0.2,
-      amplitudeY: 0.2,
+      amplitudeX: 0.1,
+      amplitudeY: 0.1,
     },
     slice: {
       count: 6,

@@ -59,6 +59,7 @@ export const ProjectPicker = (props) => {
       sub: "Esse foi meu primeiro grande projeto, consiste em um site onde você pode programar dentro dele, similar a uma IDE. Ele possui função de salvamento automatico e dowload de saves.",
       link: "https://smart-code-senai.netlify.app/",
       tec: "JavaScript Vanilla, HTML, CSS",
+      git: "https://github.com/jonabergamo/smart-code",
     },
     {
       img: props.check ? gerenciador : gerenciadorWhite,
@@ -67,6 +68,7 @@ export const ProjectPicker = (props) => {
       sub: "Esse projeto foi feito usando React.Js, foi um estudo do flamework e da biblioteca framer-motion. Consiste em um sistema que permite que você crie e armazene cartões personalizados.",
       link: "https://gerenciamento-cartoes.netlify.app",
       tec: "React.js, framer-motion",
+      git: "https://github.com/jonabergamo/react-controleDeCart-es",
     },
     {
       img: props.check ? portfolio : portfolioWhite,
@@ -75,6 +77,7 @@ export const ProjectPicker = (props) => {
       sub: "Primeiro projeto realizado em sala de aula, consistia em um portfólio web.",
       link: "https://jonabergamo.netlify.app/",
       tec: "JavaScript Vanilla, HTML, CSS",
+      git: "https://github.com/jonabergamo/portfolio-web",
     },
     {
       img: props.check ? jogoEspaco : jogoEspacoWhite,
@@ -83,6 +86,7 @@ export const ProjectPicker = (props) => {
       sub: "Durante meus estudos de Java e POO, criei esse jogo divertido.",
       link: false,
       tec: "Java, JFrame",
+      git: "https://github.com/jonabergamo/java-space-game",
     },
     {
       img: props.check ? paginaCaptura : paginaCapturaWhite,
@@ -91,6 +95,7 @@ export const ProjectPicker = (props) => {
       sub: "Meu primeiro projeto utilizando um banco de dados não relacional em uma situação real.",
       link: false,
       tec: "React.js, Firebase/firestore",
+      git: false,
     },
     {
       img: props.check ? calculadora : calculadoraWhite,
@@ -99,6 +104,7 @@ export const ProjectPicker = (props) => {
       sub: "Projeto simples de uma calculadora de INSS com interface amigavel.",
       link: "https://calculadora-inss.netlify.app",
       tec: "JavaScript Vanilla, HTML, CSS",
+      git: false,
     },
   ];
 

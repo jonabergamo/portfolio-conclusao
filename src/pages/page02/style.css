@@ -205,6 +205,7 @@ footer {
   width: 500vw;
   justify-content: center;
   z-index: -1000;
+  overflow-x: scroll;
 }
 
 .background-text h1 {

@@ -25,8 +25,8 @@ export const StudiesScreen = (props) => {
     },
     shake: {
       velocity: 10,
-      amplitudeX: 0.2,
-      amplitudeY: 0.2,
+      amplitudeX: 0.1,
+      amplitudeY: 0.1,
     },
     slice: {
       count: 6,
